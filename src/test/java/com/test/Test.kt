@@ -18,7 +18,7 @@ interface AbstractData
 
 data class Data(
         val count: Int
-)
+): AbstractData
 
 
 class Model<T> (
