@@ -41,8 +41,8 @@ class Test {
         println(modelJson)
 
         // Here fails with error:
-        // com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Missing type id when trying to resolve subtype of [simple type, class com.test.AbstractData]: missing type id property '_type' (for POJO property 'data')
-        val modelFromString: Model<AbstractData> = mapper.readValue(modelJson)
+        // com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Missing type id when trying to resolve subtype of [simple type, class com.test.Data]: missing type id property '_type' (for POJO property 'data')
+        val modelFromString: Model<Data> = mapper.readValue(modelJson)
 
     }
 
